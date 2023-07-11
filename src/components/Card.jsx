@@ -2,7 +2,6 @@ import React from 'react';
 import select from '../images/Vector-love.svg';
 
 function Card({ card, onCardClick }) {
-
   function handleClick() {
     onCardClick(card);
   };
@@ -15,7 +14,7 @@ function Card({ card, onCardClick }) {
         <h3 className="place__title">{card.name}</h3>
         <div className="place__like-container">
           <img className="place__select" src={select} alt="Положить в избранное"></img>
-          <p className="place__counter"></p>
+          <p className="place__counter">{card.likes.length}</p>
         </div>
       </div>
     </article>

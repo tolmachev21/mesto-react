@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from './utils/Api.js';
+import api from '../utils/Api.js';
 import Card from './Card.jsx';
 
 const Main = function (props) {
@@ -16,7 +16,8 @@ const Main = function (props) {
         setUserDescription(dataUser.about);
         setUserAvatar(dataUser.avatar);
         setCards(dataCards);
-      });
+      })
+      .catch(error => `Ошибка при отрисовке карточек ${error}`)
   }, [])
 
 
