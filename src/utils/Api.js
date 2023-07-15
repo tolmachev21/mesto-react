@@ -19,7 +19,7 @@ class Api {
       }
     })
       .then(this._checkResponse)
-    }
+  }
 
   getUserInfo() {
     return fetch(`${this._baseUrl}/users/me`, {
@@ -50,7 +50,7 @@ class Api {
         avatar: data.avatar
       })
     })
-    .then(this._checkResponse)
+      .then(this._checkResponse)
   }
 
   addNewCard(data) {
@@ -62,7 +62,7 @@ class Api {
         link: data.link,
       })
     })
-    .then(this._checkResponse)
+      .then(this._checkResponse)
   }
 
   addLikeCard(cardId) {
@@ -98,9 +98,9 @@ class Api {
 
 const api = new Api({
   baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-66',
-  headers:  {
+  headers: {
     authorization: 'e72a7094-3b1a-4cd8-9d0f-c71e8371a4be',
-    'Content-Type': 'application/json, charset=utf-8'
+    'Content-Type': 'application/json'
   }
 });
 

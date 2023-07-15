@@ -77,7 +77,7 @@ function App() {
             })
             .catch((err) => `Ошибка при редактировании аватара ${err}`)
     };
- 
+
     function handleUpdateUser(dataUserInfo) {
         api.editUserInfo(dataUserInfo)
             .then((res) => {
@@ -135,7 +135,7 @@ function App() {
                     onUpdateAvatar={handleUpdateAvatar}
                 />
 
-                <AddPlacePopup 
+                <AddPlacePopup
                     isOpen={isAddPlacePopupOpen}
                     onClose={closeAllPopups}
                     onAddPlace={handleAddPlace}
