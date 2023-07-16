@@ -22,6 +22,7 @@ function AddPlacePopup(props) {
       isOpen={props.isOpen}
       onClose={props.onClose}
       onSubmit={handleSubmit}
+      buttonText='Сохранить'
     >
       <input
         ref={inputName}
@@ -49,7 +50,6 @@ function AddPlacePopup(props) {
       <span
         id="card-link-error"
         className="popup__error"></span>
-      <button className="popup__submit-button" type="submit">Сохранить</button>
     </PopupWithForm>
   )
 };
