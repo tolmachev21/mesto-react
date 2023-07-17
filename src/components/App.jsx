@@ -146,10 +146,8 @@ function App() {
                     name='delete-card'
                     isOpen={isDeletePopupOpen}
                     onClose={closeAllPopups}
-                    onSubmit={handleDeleteSubmit}>
-                    <button
-                        className="popup__submit-button popup__submit-button_state_valid"
-                        type="submit">Да</button>
+                    onSubmit={handleDeleteSubmit}
+                    buttonText='Да'>
                 </PopupWithForm>
                 <ImagePopup
                     card={selectedCard}
